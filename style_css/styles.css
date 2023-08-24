@@ -69,7 +69,7 @@ body, ul {
   margin: 4px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .nav-list {
       display: none; /* Initially hide the nav list */
       flex-direction: column; /* Stack menu items vertically */
