@@ -289,7 +289,7 @@ body, ul {
   background-image: url('ourservices.jpg');
   background-size: cover;
   width: 100%;
-  height: auto;
+  height: 100vh;
   text-align: center;
   margin: 0px;
 }
@@ -297,6 +297,7 @@ body, ul {
 .first-div-services{
   color:#fff;
   top: 100px;
+  font-size: 10px;
 }
 
 .second-div-services{
@@ -373,7 +374,7 @@ body, ul {
   color:#134e51;
   text-align: center;
   padding-top: 0.5cm;
-  font-size: 15px;
+  font-size: 10px;
 }
 
 .our-services{
@@ -484,6 +485,7 @@ section {
   color:#134e51;
   text-align: center;
   padding-top: 0.5cm;
+  font-size: 10px;
 }
 .specialistcon{
   background:#fff;
@@ -499,6 +501,7 @@ section {
   color:#134e51;
   text-align: center;
   padding-top: 0.5cm;
+  font-size: 10px;
 }
 
 .cntct{
