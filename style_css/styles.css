@@ -1,0 +1,625 @@
+.mainlogo{
+  justify-content: start;
+}
+
+.mainlogo img{
+  width: 200px;
+  height: 50px;
+  margin-left: 50PX;
+}
+
+.header{
+  display: absolute;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.body{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #ffffff, #469793);
+  color: #096368;
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.nav-list li {
+  margin: 0 5px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 20px;
+  justify-content: end;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #194c52;
+  margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+      display: none; /* Initially hide the nav list */
+      flex-direction: column; /* Stack menu items vertically */
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(to right, #ffffff, #469793);
+      opacity: 0.95;
+      transition: all 0.3s ease;
+      border-radius: 15px;
+  }
+  .nav-list li a{
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      width: 100%;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      padding: auto;
+  }
+
+  .nav-list li a:hover{
+      color:rgb(0, 0, 0);
+  }
+
+  .nav-list.show {
+      display: flex; /* Show the nav list when .show class is added */
+  }
+
+  .hamburger {
+      display: block; /* Show the hamburger icon */
+  }
+}
+
+
+.text{
+  color:#096368;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.text:hover{
+  color:#2d3b3b;
+  text-decoration: none;
+}
+
+.container-botton-slideshow{
+  display: flex;
+  flex-direction: row; /* Default row layout */
+  justify-content: center;
+  width: 100%;
+
+}
+
+.containericon1 {
+  padding: 0px;
+  background: linear-gradient(to top, #ffffff 50%, #55adad 100%);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0);
+  width: 30%;
+  height: 190px;
+  border-radius: 40px;
+  text-align: center;
+  margin: 10px;
+  max-width: 100%;
+  flex-direction: row; /* or column */
+  
+}
+.containericon2 {
+  padding: 0px;
+  background: linear-gradient(to top, #ffffff 60%, #55adad 100%);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0);
+  width: 30%;
+  height: 290px;
+  border-radius: 40px;
+  text-align: center;
+  margin: 10px;
+  max-width: 100%;
+  flex-direction: row; /* or column */
+}
+.containericon3 {
+  padding: 0px;
+  background: linear-gradient(to top, #ffffff 50%, #55adad 100%);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0);
+  width: 30%;
+  height: 190px;
+  border-radius: 40px;
+  text-align: center; 
+  margin: 10px;
+  max-width: 100%;
+  flex-direction: row; /* or column */
+}
+
+@media (max-width: 768px) {
+  .text-to-hide {
+    display: none; /* Hide the text */
+  }
+}
+
+.container-botton-slideshow img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.container-botton-slideshow  a{
+    color: black;
+  }
+
+.container-botton-slideshow  a:hover{
+    color: rgb(30, 102, 102);
+  }
+
+@media (max-width: 768px) {
+  .container-botton-slideshow  a:hover {
+    color: rgb(30, 102, 102);
+      
+  }
+}
+
+
+.icon p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/*slideshow css*/
+.slideshow-centering-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideshow-container {
+  position:relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .slideshow-container {
+    margin-bottom: -130px; /* Adjusted margin for smaller screens */
+    margin-top: -130px;
+  }
+}
+
+.slideshow {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.slide img {
+  width: 100%;
+}
+
+/* Add this CSS to style circular buttons */
+.prev-btn, .next-btn {
+  /* Existing button styles */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
+  width: 30px; /* Set width and height to create a circular shape */
+  height: 30px;
+  border-radius: 50%; /* Make the button circular */
+  background-color: #33333393; /* Set a background color */
+  color: #fff; /* Set text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev-btn {
+  left: 20px;
+}
+
+.next-btn {
+  right: 20px;
+}
+
+.brief-history{
+  text-align: center;
+  margin:20px;
+}
+
+.historybg{
+  background-image: white;
+  background-size: cover;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .historybg {
+  margin-top: -190px;
+  }
+}
+
+.btnhistory{
+  background-color:#2f9095;
+  border-radius: 30px;
+}
+
+
+/*-------our services--------- */
+.our-services{
+  background-image: url('ourservices.jpg');
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 0px;
+}
+
+.first-div-services{
+  color:#fff;
+  top: 100px;
+}
+
+.second-div-services{
+  max-width: auto;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+
+}
+
+.third-div-services{
+  max-width: auto;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+
+}
+.forth-div-services{
+  max-width: auto;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+/*---icon---- */
+.size{
+  position: relative;
+  width: 60px;
+  height: auto;
+  left: 2px;
+  top:-20px;
+
+}
+
+.icon-services_one{
+  color: #fff;
+  width: 300px;
+  height: auto;
+  top: 30px;
+  top: 100px;
+}
+.icon-services_two{
+  color: #fff;
+  width: 300px;
+  height: auto;
+  top: 30px;
+}
+.icon-services_three{
+  color: #fff;
+  width: 300px;
+  height: auto;
+  top: 30px;
+}
+.icon-services_four{
+  color: #fff;
+  width: 300px;
+  height: auto;
+  top: 30px;
+}
+.icon-services_five{
+  color: #fff;
+  width: 300px;
+  height: auto;
+  top: 30px;
+}
+/*-----news---*/
+.latest-news{
+  background: linear-gradient(to right, #ffffff, #469793);
+  width: 100%;
+  height: 10vh;
+}
+
+.our-services{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.news-tittle{
+  color:#134e51;
+  text-align: center;
+  padding-top: 0.5cm;
+}
+
+
+.news{
+  display: flex;
+  flex-direction: row; /* Default row layout */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.newsicon img{
+  width: 100%;
+  height: 300px;
+}
+
+.newsicon1{
+  text-align: center;
+  margin: 20px;
+}
+.newsicon2{
+  text-align: center;
+  margin: 20px;
+}
+.newsicon3{
+  text-align: center;
+  margin: 20px;
+}
+
+
+
+/*----# Sections General-----*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f6f7f6;
+  margin: 0px;
+}
+
+.section-title {
+  padding-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #317a7a;
+  margin: 4px 10px;
+}
+
+.section-title p {
+  margin: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #37423b;
+}
+
+/*-------# Counts---------*/
+.counts {
+  padding: 30px 0;
+}
+
+.counts .counters span {
+  font-size: 48px;
+  display: block;
+  color: #1c8181;
+  font-weight: 700;
+}
+
+.counts .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #37423b;
+}
+
+.specialist{
+  background: linear-gradient(to right, #ffffff, #469793);
+  width: 100%;
+  height: 10vh;
+}
+.specialistcon{
+  background:#fff;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.contacttitle{
+  background: linear-gradient(to right, #ffffff, #469793);
+  width: 100%;
+  height: 10vh;
+}
+
+.contactfull{
+  align-items: center;
+  justify-content: center;
+  max-width: 1528px;
+  height: auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .contactfull {
+    flex-direction: column; /* Change to column layout when minimized */
+  }
+}
+
+.contact{
+  background:#fff;
+  max-width: 1528px;
+  height: auto;
+}
+
+.iconfont{
+  font-size: 24px;
+  color: #096368;
+}
+
+.copyrightcon{
+  height: 30px;
+  width: auto;
+  background: linear-gradient(to right, #ffffff, #469793);
+}
+
+.address{
+
+  width: 450px;
+  height: auto;
+}
+.email{
+
+  width: 450px;
+  height: auto;
+}
+.phone{
+
+  width: 450px;
+  height: auto;
+}
+
+.contact i {
+  font-size: 20px;
+  color: #1c8181;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #ecf9f000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.forms{
+  width: 500px;
+  height: auto;
+  margin: 1px;
+  padding: 5px;
+
+}
+
+.forms img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 768px) {
+  /* Styles for mobile view */
+  .fullupforms {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 769px) {
+  /* Styles for computer view */
+  .fullupforms {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+  }
+}
+
+.fullupforms{
+  text-align: center;
+  margin: 20px;
+}
+
+
+
+.copyright{
+  height: 1vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.lastbeforefooter{
+  width: 100%;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.lastbeforefooter img{
+  width:350px;
+  height: 100px;
+}
+
+/* Example media query for smaller screens */
+@media (max-width: 768px) {
+  /* CSS rules for smaller screens */
+}
