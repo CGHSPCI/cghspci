@@ -5,11 +5,11 @@
 .mainlogo img{
   width: 200px;
   height: 50px;
-  margin-left: 50PX;
+  margin-left: 30PX;
 }
 
 .header{
-  display: absolute;
+  display: flex;
   position: fixed;
   z-index: 100;
   width: 100%;
@@ -369,7 +369,10 @@ body, ul {
 .latest-news{
   background: linear-gradient(to right, #ffffff, #469793);
   width: 100%;
-  height: 10vh;
+  height: 15vh;
+  color:#134e51;
+  text-align: center;
+  padding-top: 0.5cm;
 }
 
 .our-services{
@@ -377,13 +380,6 @@ body, ul {
   height: 100vh;
   display: flex;
 }
-
-.news-tittle{
-  color:#134e51;
-  text-align: center;
-  padding-top: 0.5cm;
-}
-
 
 .news{
   display: flex;
@@ -482,7 +478,11 @@ section {
 .specialist{
   background: linear-gradient(to right, #ffffff, #469793);
   width: 100%;
-  height: 10vh;
+  height: 15vh;
+  z-index: 100;
+  color:#134e51;
+  text-align: center;
+  padding-top: 0.5cm;
 }
 .specialistcon{
   background:#fff;
@@ -491,10 +491,13 @@ section {
 }
 
 
-.contacttitle{
+.contactcon{
   background: linear-gradient(to right, #ffffff, #469793);
   width: 100%;
-  height: 10vh;
+  height: 15vh;
+  color:#134e51;
+  text-align: center;
+  padding-top: 0.5cm;
 }
 
 .cntct{
@@ -524,9 +527,12 @@ section {
 }
 
 .copyrightcon{
-  height: 30px;
+  height: 40px;
   width: auto;
   background: linear-gradient(to right, #ffffff, #469793);
+  color:#134e51;
+  text-align: center;
+  padding-top: 0.5cm;
 }
 
 .address{
@@ -571,13 +577,6 @@ section {
   width: 100%;
   height: 400px;
   border-radius: 30px;
-}
-
-.copyright{
-  height: 1vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .lastbeforefooter{
