@@ -10,6 +10,13 @@
   margin-left: 30PX;
 }
 
+.header{
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+
+}
+
  /* IBody CSS */
 
 body, ul {
@@ -511,7 +518,7 @@ section {
 }
 
 .contact{
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
   margin-left: 10px;
   margin-top: 10px;
