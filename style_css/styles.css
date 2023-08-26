@@ -16,15 +16,6 @@
   overflow-x: hidden;
  }
 }
-@media only screen and (max-width: 900px) and (min-width: 481px) {
-  html,body {
-  width: 100%;
-  height:  100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
- }
-}
 
  /* navigation logo */
 
@@ -47,23 +38,6 @@
   z-index: 100;
   width: 100%;
   height: auto;
-}
-
-/* For smaller screens */
-@media (max-width: 768px) {
-  .logo {
-      text-align: center; /* Center the logo */
-  }
-
-  .nav {
-      text-align: center; /* Center the navigation links */
-      margin-top: 10px; /* Add some space between logo and navigation */
-  }
-
-  .nav a {
-      display: block; /* Make navigation links stack vertically */
-      margin: 5px 0;
-  }
 }
 
 
@@ -178,7 +152,7 @@ body, ul {
   height: auto;
   display: flex;
   flex-direction: row; /* Default row layout */
-   flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: center;
   
 }
