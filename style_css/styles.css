@@ -1,9 +1,5 @@
  /* navigation logo */
 
-.mainlogo{
-  justify-content: start;
-}
-
 .mainlogo img{
   width: 200px;
   height: 50px;
@@ -211,22 +207,24 @@ body, ul {
 .slideshow-container {
   position:relative;
   width: 100%;
-  height:auto;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  }
-
-.slideshow-container {
-  position:relative;
-  width: 100%;
   height: 80vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 900px) {
+  .lideshow-container {
+    color: rgb(30, 102, 102);
+    width: 100%;
+    height: 1auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 
 .slideshow {
   display: flex;
@@ -369,11 +367,14 @@ body, ul {
 .latest-news{
   background: linear-gradient(to right, #ffffff, #469793);
   width: 100%;
-  height: 15vh;
+  height: 10vh;
   color:#134e51;
   text-align: center;
-  padding-top: 0.5cm;
   font-size: 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 .our-services{
@@ -479,12 +480,15 @@ section {
 .specialist{
   background: linear-gradient(to right, #ffffff, #469793);
   width: 100%;
-  height: 15vh;
+  height: 10vh;
   z-index: 100;
   color:#134e51;
   text-align: center;
-  padding-top: 0.5cm;
   font-size: 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 .specialistcon{
   background:#fff;
@@ -496,11 +500,14 @@ section {
 .contactcon{
   background: linear-gradient(to right, #ffffff, #469793);
   width: 100%;
-  height: 15vh;
+  height: 10vh;
   color:#134e51;
   text-align: center;
-  padding-top: 0.5cm;
   font-size: 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 .cntct{
@@ -590,15 +597,14 @@ section {
 @media (max-width: 768px) {
   .lastbeforefooter img{
     width:30%;
-  height: 5vh;
+    height: 5vh;
   }
 }
 
-.copyrightcon{
-  height: 6vh;
+footer p {
+  max-height: auto;
   width: 100%;
   background: linear-gradient(to right,#469793, #ffffff 50%, #469793);
   color:#134e51;
   text-align: center;
-  padding-top: 0.5cm;
 }
