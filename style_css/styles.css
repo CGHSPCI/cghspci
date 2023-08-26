@@ -178,6 +178,7 @@ body, ul {
   height: auto;
   display: flex;
   flex-direction: row; /* Default row layout */
+   flex-wrap: wrap;
   justify-content: center;
   
 }
