@@ -127,7 +127,7 @@ body, ul {
       display: none;
       flex-direction: column;
       position: absolute;
-      top: 10 vh;
+      top: 15 vh;
       left: 0;
       width: 100%;
       background: linear-gradient(to right, #ffffff, #469793);
