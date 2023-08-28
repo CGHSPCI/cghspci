@@ -178,7 +178,7 @@ body, ul {
   overflow-x: hidden;
  }
 }
-@media only screen and (max-width: 481px) and (min-width: 300px) {
+@media only screen and (max-width: 900px) and (min-width: 481px) {
   html,body {
   width: 100%;
   height:  100%;
