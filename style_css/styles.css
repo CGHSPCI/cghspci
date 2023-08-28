@@ -25,14 +25,7 @@
   text-align: center;
   cursor: pointer;
   font-weight: 700;
-  margin-left: 100px;
-}
-
-@media (max-width: 768px) {
-  .emergency {
-   margin-left:20px ;
-      
-  }
+  z-index: 100;
 }
 
 .emergency a{
@@ -89,7 +82,6 @@ body, ul {
 
 .nav-list li a {
   text-decoration: none;
-  color: inherit;
 }
 
  /* navigation Mobile */
