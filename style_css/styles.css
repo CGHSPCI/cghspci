@@ -1,30 +1,4 @@
- @media only screen and (max-width: 480px) {
-  html,body {
-  width: 100%;
-  height:  100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
- }
-}
-@media only screen and (max-width: 481px) {
-  html,body {
-  width: 100%;
-  height:  100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
- }
-}
-@media only screen and (max-width: 900px) and (min-width: 481px) {
-  html,body {
-  width: 100%;
-  height:  100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
- }
-}
+
 
  /* navigation logo */
 
@@ -37,10 +11,40 @@
 @media (max-width: 768px) {
   .logo img {
     max-width: 100%;
-    height: 3vh;
+    height: 4vh;
     margin-left: 10PX;
   }
 }
+
+.emergency b{
+  color: #c71919;
+  text-align: center;
+}
+
+.emergency {
+  text-align: center;
+  cursor: pointer;
+  font-weight: 700;
+  margin-left: 100px;
+}
+
+@media (max-width: 768px) {
+  .emergency {
+   margin-left:20px ;
+      
+  }
+}
+
+.emergency a{
+  text-decoration: none;
+  color: #194c52;
+}
+
+.emergency a:hover{
+  text-decoration: none;
+  color: #c71919;
+}
+
 
 .header{
   position: fixed;
@@ -109,7 +113,7 @@ body, ul {
       display: none;
       flex-direction: column;
       position: absolute;
-      top: 80px;
+      top: 20vh;
       left: 0;
       width: 100%;
       background: linear-gradient(to right, #ffffff, #469793);
@@ -156,6 +160,34 @@ body, ul {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 480px) {
+  html,body {
+  width: 100%;
+  height:  100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+ }
+}
+@media only screen and (max-width: 481px) {
+  html,body {
+  width: 100%;
+  height:  100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+ }
+}
+@media only screen and (max-width: 481px) and (min-width: 300px) {
+  html,body {
+  width: 100%;
+  height:  100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+ }
+}
+
 .container-icon{
   max-width: 100%;
   height: auto;
@@ -164,13 +196,6 @@ body, ul {
   flex-wrap: wrap;
   justify-content: center;
   
-}
-
-@media (max-width: 900px) {
-  .container-icon
-   {
-    color:blue
-  }
 }
 
 .containericon1 {
@@ -211,12 +236,6 @@ body, ul {
   flex-direction: row; /* or column */
 }
 
-@media (max-width: 768px) {
-  .text-to-hide {
-    display: none; /* Hide the text */
-  }
-}
-
 .container-icon img {
   width: 50px;
   height: 50px;
@@ -252,17 +271,6 @@ body, ul {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media (max-width: 600px) {
-  .slideshow-container {
-    color: rgb(30, 102, 102);
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }
 
 
@@ -326,13 +334,16 @@ body, ul {
   background-image: url('ourservices.jpg');
   background-size: cover;
   width: 100%;
-  height: 110vh;
+  height: 1000px;
   text-align: center;
   margin: 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .first-div-services{
-  color:#fff;
+  color:#b01414;
   top: 100px;
   font-size: 10px;
 }
@@ -346,6 +357,15 @@ body, ul {
 
 }
 
+@media (max-width: 768px) {
+  .second-div-services {
+  display: flex;
+  flex-direction: row; /* Default row layout */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+  }
+
 .third-div-services{
   max-width: auto;
   height: 200px;
@@ -354,6 +374,15 @@ body, ul {
   margin: 10px;
 
 }
+
+@media (max-width: 768px) {
+  .third-div-services {
+  display: flex;
+  flex-direction: row; /* Default row layout */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+  }
 .forth-div-services{
   max-width: auto;
   height: 200px;
@@ -361,6 +390,15 @@ body, ul {
   align-items: center;
   margin: 10px;
 }
+
+@media (max-width: 768px) {
+  .forth-div-services {
+  display: flex;
+  flex-direction: row; /* Default row layout */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+  }
 
 /*---icon---- */
 .size{
@@ -373,32 +411,32 @@ body, ul {
 }
 
 .icon-services_one{
-  color: #fff;
+  color: #851d1d;
   width: 300px;
   height: auto;
   top: 30px;
   top: 100px;
 }
 .icon-services_two{
-  color: #fff;
+  color: #b42b2b;
   width: 300px;
   height: auto;
   top: 30px;
 }
 .icon-services_three{
-  color: #fff;
+  color: #bc3636;
   width: 300px;
   height: auto;
   top: 30px;
 }
 .icon-services_four{
-  color: #fff;
+  color: #a42323;
   width: 300px;
   height: auto;
   top: 30px;
 }
 .icon-services_five{
-  color: #fff;
+  color: #c71919;
   width: 300px;
   height: auto;
   top: 30px;
