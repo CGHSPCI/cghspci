@@ -1,27 +1,20 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Get all anchor links that point to sections on the same page
-    const anchorLinks = document.querySelectorAll('a[href^="#"]');
-    
-    // Add click event listener to each anchor link
-    anchorLinks.forEach(function(link) {
-      link.addEventListener('click', function(e) {
-        e.preventDefault(); // Prevent the default behavior of jumping to the anchor
-        
-        const targetId = this.getAttribute('href'); // Get the target section's ID
-        const targetSection = document.querySelector(targetId); // Find the target section
-        
-        if (targetSection) {
-          const offset = targetSection.offsetTop; // Get the target section's position from the top
-          // Smoothly scroll to the target section
-          window.scrollTo({
-            top: offset,
-            behavior: 'smooth'
-          });
-        }
+  // Smooth scrolling function
+  function smoothScroll(target) {
+    const element = document.querySelector(target);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth'
       });
-    });
+    }
+  }
+
+  // Listen for click events on anchor links
+  document.addEventListener('click', function(event) {
+    if (event.target.tagName === 'A' && event.target.getAttribute('href').startsWith('#')) {
+      event.preventDefault();
+      smoothScroll(event.target.getAttribute('href'));
+    }
   });
-  
 
   const slideshowContainers = document.querySelectorAll('.slideshow-container');
 
