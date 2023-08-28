@@ -1,685 +1,296 @@
-
-@media only screen and (max-width: 480px) {
-  html,body {
-  width: 100%;
-  height:  100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
- }
-}
-
- /* navigation logo */
-
-.logo img{
-  max-width: 100%;
-  height: 5vh;
-  margin-left: 30PX;
-}
-
-@media (max-width: 1200px) {
-  .logo img {
-    max-width: 100%;
-    height: 4vh;
-    margin-left: 10PX;
-    margin-bottom: 2x;
-  }
-}
-
-.emergency b{
-  color: #c71919;
-  text-align: center;
-}
-
-.emergency {
-  text-align: center;
-  cursor: pointer;
-  font-weight: 700;
-  width: 100%;
-  height: auto;
-}
-
-@media (max-width: 1200px) {
-  .emergency {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-.emergency a{
-  text-decoration: none;
-  color: #194c52;
-}
-
-.emergency a:hover{
-  text-decoration: none;
-  color: #c71919;
-}
-
-
-.header{
-  position: fixed;
-  z-index: 90;
-  width: 100%;
-  height: auto;
-}
-
-
- /* IBody CSS */
-
-body, ul {
-  margin: 0;
-  padding: 0;
-}
-
-.body{
-  max-width: 100%;
-}
-
- /* navigation bar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(to right, #ffffff, #469793);
-  color: #205157;
-  width: 100%;
-  height: auto;
-}
-@media (max-width: 1200px) {
-  .navbar {
-     width: 100%;
-     height: 8vh; 
-  }
-}
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-
-.nav-list li {
-  margin: 0 5px;
-}
-
-.nav-list li a {
-  text-decoration: none;
-}
-
- /* navigation Mobile */
-
-.hamburger {
-  display: none;
-  cursor: pointer;
-  padding: 10px;
-  justify-content: end;
-}
-
-@media (max-width: 1200) {
-  .hamburger {
-    margin-bottom: 45px;
-    align-items:center;
-  }
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #194c52;
-  margin: 4px 0;
-}
-
-@media (max-width: 1200px) {
-  .nav-list {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 15vh;
-      left: 0;
-      width: 100%;
-      background: linear-gradient(to right, #ffffff, #469793);
-      opacity: 0.95;
-      transition: all 0.3s ease;
-      border-radius: 15px;
-      z-index: 100;
-  }
-  .nav-list li a{
-      text-decoration: none;
-      color: inherit;
-      display: block;
-      width: 100%;
-      text-align: left;
-      font-size: 16px;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      padding: auto;
-  }
-
-  .nav-list li a:hover{
-      color:rgb(0, 0, 0);
-  }
-
-  .nav-list.show {
-      display: flex; /* Show the nav list when .show class is added */
-  }
-
-  .hamburger {
-      display: block; /* Show the hamburger icon */
-  }
-}
-
- /* navigation font */
-
-.text{
-  color:#096368;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-.text:hover{
-  color:#2d3b3b;
-  text-decoration: none;
-}
-
-.container-icon{
-  max-width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row; /* Default row layout */
-  flex-wrap: wrap;
-  justify-content: center;
-  
-}
-
-.containericon1 {
-  padding: 0px;
-  background: linear-gradient(to top, #ffffff 10%, #55adad 100%);
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0);
-  width: 30%;
-  height: 20vh;
-  border-radius: 40px;
-  text-align: center; 
-  margin: 5px;
-  max-width: 100%;
-  flex-direction: row; /* or column */
-  
-}
-.containericon2 {
-  padding: 0px;
-  background: linear-gradient(to top, #ffffff 10%, #55adad 100%);
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0);
-  width: 30%;
-  height: 20vh;
-  border-radius: 40px;
-  text-align: center;
-  margin: 5px;
-  max-width: 100%;
-  flex-direction: row; /* or column */
-}
-.containericon3 {
-  padding: 0px;
-  background: linear-gradient(to top, #ffffff 10%, #55adad 100%);
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0);
-  width: 30%;
-  height: 20vh;
-  border-radius: 40px;
-  text-align: center; 
-  margin: 5px;
-  max-width: 100%;
-  flex-direction: row; /* or column */
-}
-
-.container-icon img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-.container-icon  a{
-    color: black;
-  }
-
-  .container-icon  a:hover{
-    color: rgb(30, 102, 102);
-  }
-
-@media (max-width: 768px) {
-  .container-icon  a:hover {
-    color: rgb(30, 102, 102);
-      
-  }
-}
-
-
-.icon p {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.slideshow-container {
-  position:relative;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.slideshow {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-  flex: 0 0 100%;
-}
-
-.slide img {
-  width: 100%;
-}
-
-/* Add this CSS to style circular buttons */
-.prev-btn, .next-btn {
-  /* Existing button styles */
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 20px;
-  cursor: pointer;
-  width: 30px; /* Set width and height to create a circular shape */
-  height: 30px;
-  border-radius: 50%; /* Make the button circular */
-  background-color: #33333393; /* Set a background color */
-  color: #fff; /* Set text color */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.prev-btn {
-  left: 20px;
-}
-
-.next-btn {
-  right: 20px;
-}
-
-.brief-history{
-  text-align: center;
-  margin:20px;
-}
-
-.historybg{
-  background: white;
-  width: 100%;
-}
-
-.btnhistory{
-  background-color:#2f9095;
-  border-radius: 30px;
-}
-
-
-/*-------our services--------- */
-.our-services{
-  background-image: url('ourservices.jpg');
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  margin: 0px;
-}
-
-.first-div-services{
-  color:#ffffff;
-  top: 100px;
-  font-size: 10px;
-}
-
-.second-div-services{
-  max-width: auto;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  margin: 10px;
-
-}
-
-@media (max-width: 768px) {
-  .second-div-services {
-  max-width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row; /* Default row layout */
-  flex-wrap: wrap;
-  justify-content: center;
-}
-  }
-
-.third-div-services{
-  max-width: auto;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  margin: 10px;
-
-}
-
-@media (max-width: 768px) {
-  .third-div-services {
-  max-width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row; /* Default row layout */
-  flex-wrap: wrap;
-  justify-content: center;
-}
-  }
-.forth-div-services{
-  max-width: auto;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  margin: 10px;
-}
-
-@media (max-width: 768px) {
-  .forth-div-services {
-  max-width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row; /* Default row layout */
-  flex-wrap: wrap;
-  justify-content: center;
-}
-  }
-
-/*---icon---- */
-.size{
-  position: relative;
-  width: 60px;
-  height: auto;
-  left: 2px;
-  top: -5px;
-
-}
-
-.icon-services_one{
-  color: #ffffff;
-  width: 300px;
-  height: auto;
-  top: 30px;
-  top: 100px;
-  padding: 20px;
-}
-.icon-services_two{
-  color: #ffffff;
-  width: 300px;
-  height: auto;
-  top: 30px;
-  padding: 20px;
-}
-.icon-services_three{
-  color: #ffffff;
-  width: 300px;
-  height: auto;
-  top: 30px;
-  padding: 20px;
-}
-.icon-services_four{
-  color: #ffffff;
-  width: 300px;
-  height: auto;
-  top: 30px;
-  padding: 20px;
-}
-.icon-services_five{
-  color: #ffffff;
-  width: 300px;
-  height: auto;
-  top: 30px;
-  padding: 20px;
-}
-/*-----news---*/
-.latest-news{
-  background: linear-gradient(to right, #ffffff, #469793);
-  width: 100%;
-  height: 10vh;
-  color:#134e51;
-  text-align: center;
-  font-size: 10px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-}
-
-.news{
-  display: flex;
-  flex-direction: row; /* Default row layout */
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.newsicon img{
-  width: 100%;
-  height: 300px;
-}
-
-.newsicon1{
-  text-align: center;
-  margin: 20px;
-}
-.newsicon2{
-  text-align: center;
-  margin: 20px;
-}
-.newsicon3{
-  text-align: center;
-  margin: 20px;
-}
-
-
-
-/*----# Sections General-----*/
-section {
-  padding: 60px 0;
-  overflow: hidden;
-}
-
-.section-bg {
-  background-color: #f6f7f6;
-  margin: 0px;
-}
-
-.section-title {
-  padding-bottom: 20px;
-}
-
-.section-title h2 {
-  font-size: 10px;
-  font-weight: 300;
-  padding: 0;
-  line-height: 1px;
-  margin: 0 0 5px 0;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
-}
-
-.section-title h2::after {
-  content: "";
-  width: 120px;
-  height: 1px;
-  display: inline-block;
-  background: #317a7a;
-  margin: 4px 10px;
-}
-
-.section-title p {
-  margin: 0;
-  margin: 0;
-  font-size: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #37423b;
-}
-
-/*-------# Counts---------*/
-.counts {
-  padding: 10px 0;
-}
-
-.counts .counters span {
-  font-size: 48px;
-  display: block;
-  color: #1c8181;
-  font-weight: 700;
-}
-
-.counts .counters p {
-  padding: 0;
-  margin: 0 0 20px 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  color: #37423b;
-}
-
-.specialist{
-  background: linear-gradient(to right, #ffffff, #469793);
-  width: 100%;
-  height: 10vh;
-  z-index: 100;
-  color:#134e51;
-  text-align: center;
-  font-size: 10px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-}
-.specialistcon{
-  background:#fff;
-  width: 100%;
-  height: 100vh;
-}
-
-
-.contactcon{
-  background: linear-gradient(to right, #ffffff, #469793);
-  width: 100%;
-  height: 10vh;
-  color:#134e51;
-  text-align: center;
-  font-size: 10px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-}
-
-.cntct{
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  height:auto;
-  display: flex;
-}
-
-@media (max-width: 768px) {
-  .cntct {
-    flex-direction: column; /* Change to column layout when minimized */ 
-  }
-}
-
-.contact{
-  max-width: 70%;
-  height: auto;
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
-.forms{
-  text-align: center;
-  margin: 10PX;
-  max-width: 100%;
-  height: 5%;
-}
-
-.forms img {
-  width: 100%;
-  height: 400px;
-  border-radius: 30px;
-}
-
-.iconfont{
-  font-size: 24px;
-  color: #096368;
-}
-
-.address{
-
-  width: 450px;
-  height: auto;
-}
-.email{
-
-  width: 450px;
-  height: auto;
-}
-.phone{
-
-  width: 450px;
-  height: auto;
-}
-
-.contact i {
-  font-size: 20px;
-  color: #1c8181;
-  float: left;
-  width: 44px;
-  height: 44px;
-  background: #ecf9f000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  background-color: rgb(190, 241, 243);
-}
-
-.lastbeforefooter{
-  width: 100%;
-  height: 10vh;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.lastbeforefooter img{
-  width:10%;
-  height: 5vh;
-}
-
-/* Example media query for smaller screens */
-@media (max-width: 768px) {
-  .lastbeforefooter img{
-    width:30%;
-    height: 5vh;
-  }
-}
-
-footer p {
-  max-height: auto;
-  width: 100%;
-  background: linear-gradient(to right,#469793, #ffffff 50%, #469793);
-  color:#134e51;
-  text-align: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>CGHSPCI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicons logo on tab-->
+  <link href="image\cghlogoicon.ico" rel="icon">
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" type="text/css" href="style_css\styles.css">
+
+  <!-- Add this inside the <head> section -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">   
+
+  <!-- =======================================================
+  * Template Name: Mentor - v2.1.0
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header">
+    <nav class="navbar">
+    <div class="logo d-flex" id="logo">
+      <img src="image\mainlogo.png" alt="Not Supported">
+    </div>
+    <div class="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+  </div>
+    <ul class="nav-list">
+          <li class="nav-item active"> 
+            <a href="#logo" class="text p-3"><b>HOME</b></a>
+          </li>
+          <li class="nav-item"> 
+            <a href="#sectionabout" class="text p-3"><b>ABOUT</b></a>
+          </li>
+          <li class="nav-item">
+            <a href="#sectionservces" class="text p-3"><b>SERVICES</b></a>
+          </li>
+          <li class="nav-item">
+            <a href="#news_head" class="text p-3"><b>NEWS & EVENTS</b></a>
+          </li>
+          <li class="nav-item"> 
+            <a href="#specialist" class="text p-3"><b>SPECIALIST</b></a>
+          </li>
+          <li class="nav-item">
+            <a href="#contactcon" class="text p-3"><b>CONTACT US</b></a>
+          </li>
+    </ul>
+  </nav>
+  </header>
+  <br>  <br> <br>
+  <div class="emergency">
+<p><b>EMERGENCY:</b><a href="tel:+63495623868"> +63 49 562-3868</a></p>
+</div>
+<div class="slideshow-container">
+  <div class="slideshow">
+      <div class="slide"><img src="image\SlideShow\1.jpg" alt="Image 1"></div>
+      <div class="slide"><img src="image\SlideShow\2.jpg" alt="Image 2"></div>
+      <div class="slide"><img src="image\SlideShow\3.jpg" alt="Image 3"></div>
+      <div class="slide"><img src="image\SlideShow\4.jpg" alt="Image 4"></div>
+      <div class="slide"><img src="image\SlideShow\5.jpg" alt="Image 5"></div>
+      <div class="slide"><img src="image\SlideShow\6.jpg" alt="Image 6"></div>
+      <!-- Add more slides as needed -->
+  </div>
+  <button class="prev-btn">&#10094;</button>
+  <button class="next-btn">&#10095;</button>
+</div>
+
+  <!-- ======= container-bottom-slideshow ======= -->
+  <div class="container-icon d-flex" id="sectionabout">
+    <div class="containericon1">
+        <div class="icon"><img src="image\VISION.png" alt="vision" class="toggle-image"></div>
+        <h2><a href="vision.html"><b>VISION</b></a></h2>
+    </div>
+    <div class="containericon2">
+        <div class="icon"><img src="image\MISSION.png" alt="mission"></div>
+        <h2><a href="vision.html"><b>MISSION</b></a></h2>
+    </div>
+    <div class="containericon3">
+        <div class="icon"><img src="image\CORE.png" alt="core"></div>
+        <h2><a href="vision.html"><b>CORE</b></a></h2>
+    </div>
+  </div>
+  <!-- about us -->
+  <div class="historybg">
+    <div class="brief-history">
+      <h1><b>Community General Hospital of San Pablo City, Inc.<br></b></h1>
+      <h6>Our Hospital was established and opened for public on September 15, 1969, It was licensed by the
+        Department of Health as a 50-bed private general hospital with acereditation from sss & GSIS to
+        service its Medicare patients. The hospital is located on an area of about 7,825 square meters located along the National Hi-way in
+        Bo. San Roque. It is about 250 meters from the San Pablo - Alaminos - Calauan Junction and about 1
+        km. From the center of the city poblacion.
+        The
+        The hospital consisted of three buildings of strong materials (reinforced concrete, hollow blocks & etc,)
+        of about 2,700 square meters.
+        <br><br><h3><b>BRIEF HISTORY</b></h3>
+        Forty years ago, the hospital was conceived and planned by group of US-trained physician from San
+        Pablo City. It is borne out of disappointed due to the lack of adequately equipped hospital in the area
+        where they can practice their expertise gained from their US training for the benefits of the community.
+        The existing hospitals at that time were not adequately equipped, hence, serious patients were sent to
+        manila.
+        After several meetings and dialogues of the organizing physicians with several civic leaders of the city,
+        it was decided to establish a hospital better equipped, hence, serious patients were sent to Manila
+        After several meetings and dialogues of the organizing physicians with several civic leaders of the city,
+        it was decided to establish a hospital better equipped than the other hospitals.
+      </h6><br>
+      <button class="btnhistory">Read More</button>
+    </div>
+  </div>
+
+      <!-- our services section -->
+      <div class="our-services flex-column" id="auto-resize">
+        <div class="first-div-services" id="sectionservces">
+          <H1><b><br>O U R &nbsp;&nbsp;&nbsp;S E R V I C E S</b></H1>
+        </div>
+            <div class="second-div-services">
+              <div class="icon-services_one" >
+                <img class="size" src="image\ambulanceicon.png" alt="error"></a><b><br>Emergency</b></a>
+               </div>
+            <div class="icon-services_two" >
+               <img class="size" src="image\medical-laboratory.png" alt="error"></a><b><br>Laboratory</b></a>
+             </div>
+             <div class="icon-services_three" >
+              <img class="size" src="image\pharmacy.png" alt="error"></a><b><br>Pharmacy</b></a>
+            </div>
+            <div class="icon-services_four" >
+              <img class="size" src="image\medical-laboratory.png" alt="error"></a><b><br>Laboratory</b></a>
+            </div>
+            <div class="icon-services_five" >
+             <img class="size" src="image\pharmacy.png" alt="error"></a><b><br>Pharmacy</b></a>
+           </div>
+          </div>
+
+          <div class="third-div-services">
+            <div class="icon-services_one" >
+              <img class="size" src="image\ambulanceicon.png" alt="error"></a><b><br>Emergency</b></a>
+            </div>
+            <div class="icon-services_two" >
+              <img class="size" src="image\medical-laboratory.png" alt="error"></a><b><br>Laboratory</b></a>
+            </div>
+            <div class="icon-services_three" >
+             <img class="size" src="image\pharmacy.png" alt="error"></a><b><br>Pharmacy</b></a>
+           </div>
+           <div class="icon-services_four" >
+             <img class="size" src="image\medical-laboratory.png" alt="error"></a><b><br>Laboratory</b></a>
+           </div>
+           <div class="icon-services_five" >
+            <img class="size" src="image\pharmacy.png" alt="error"></a><b><br>Pharmacy</b></a>
+          </div>
+         </div>
+
+         <div class="forth-div-services">
+          <div class="icon-services_one" >
+            <img class="size" src="image\ambulanceicon.png" alt="error"></a><b><br>Emergency</b></a>
+          </div>
+          <div class="icon-services_two" >
+            <img class="size" src="image\medical-laboratory.png" alt="error"></a><b><br>Laboratory</b></a>
+          </div>
+          <div class="icon-services_three" >
+           <img class="size" src="image\pharmacy.png" alt="error"></a><b><br>Pharmacy</b></a>
+         </div>
+         <div class="icon-services_four" >
+           <img class="size" src="image\medical-laboratory.png" alt="error"></a><b><br>Laboratory</b></a>
+         </div>
+         <div class="icon-services_five" >
+          <img class="size" src="image\pharmacy.png" alt="error"></a><b><br>Pharmacy</b></a>
+        </div>
+       </div>
+      </div>
+
+    <!-- our services section -->
+    <div class="news_head" id="news_head">
+    <div class="latest-news">
+        <h1><b>N E W S &nbsp;&nbsp;A N D &nbsp;&nbsp;E V E N T S</b></h1>
+    </div>
+    <div class="news">
+      <div class="newsicon1">
+        <div class="newsicon"><img src="image\f1.jpg" alt="news1"></div>
+        <h2><b>FIRE BRIGADE</b></h2>
+        <h6><i>Community General Hospital of San Pablo City, Inc.<br> exists to provide the best medical care.</i></h6>
+        <button class="btnhistory">Read More</button>
+    </div>
+    <div class="newsicon2">
+        <div class="newsicon"><img src="image\f2.jpg" alt="news2"></div>
+        <h2><b>FIRE BRIGADE</b></h2>
+        <h6><i>To continually engage in the introduction of modern <br>medical infrastructure facilities</i></h6>
+        <button class="btnhistory">Read More</button>
+    </div>
+    <div class="newsicon3">
+        <div class="newsicon"><img src="image\bf1.jpg" alt="news3"></div>
+        <h2><b>BREASTFEEDING</b></h2>
+        <h6><i>Compassion, Ethics, Efficiency, Effectiveness,<br> Teamwork, Responsibility, Innovation</i></h6>
+        <button class="btnhistory">Read More</button>
+    </div>
+  </div>
+</div>
+    <section id="counts" class="counts section-bg">
+      <div class="container">
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">220</span>
+            <p>Employees</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">99</span>
+            <p>Doctors</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">20</span>
+            <p>Departments</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">30</span>
+            <p>Services</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <div class="specialist" id="specialist">
+      <h1><b>O U R &nbsp;&nbsp; S P E C I A L I S T</b></h1>
+    </div>
+    <div class="slideshow-container">
+      <div class="slideshow">
+          <div class="slide"><img src="image\SlideShow2\1.1.jpg" alt="Image 4"></div>
+          <div class="slide"><img src="image\SlideShow2\1.2.jpg" alt="Image 5"></div>
+      </div>
+      <button class="prev-btn">&#10094;</button>
+      <button class="next-btn">&#10095;</button>
+  </div>
+<div class="contactcon" id="contactcon">
+  <div><h1 class="news-tittle"><b>C O N T A C T &nbsp;&nbsp; U S</b></h1></div>
+</div>
+<div class="contactfull">
+  <div class="cntct">
+  <div class="contact">
+    <div class="address">
+      <i class="fas fa-map-marker-alt"></i>
+      <h4>Location:</h4>
+      <p>C. Colago Avenue, Brgy. San Roque,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; San Pablo City, Laguna, 4000</p>
+    </div>
+
+    <div class="email">
+      <i class="fas fa-envelope"></i>
+      <h4>Email:</h4>
+      <p>cghspci@yahoo.com</p>
+    </div>
+
+    <div class="phone">
+      <i class="fas fa-phone"></i>
+      <h4>Call:</h4>
+      <p>+63 49 562-3868</p>
+    </div>
+  </div>
+      <div class="forms"><a href="https://forms.gle/sDS6hueAxMCY1PXo7">
+        <img src="image\contactus.png" alt="forms">
+      </a>
+      <h6><i>To Fill up this Form Please Click the image.</i></h6>
+    </div>
+     <!---- <button class="btnhistory"><a href="https://forms.gle/sDS6hueAxMCY1PXo7">CLICK ME</a></button>-->
+</div>
+    <div>
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=community%20general%20hospital%20of%20san%20pablo%20city&t=k&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:600px;width:100%px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:600px;width:100%px;}</style></div></div>
+  </div>
+  </div>
+  <div class="lastbeforefooter">
+    <img src="image\philhealth.png">
+  </div>
+
+  <footer>
+           <p>&copy; Copyright <strong><span>CGHSPCI</span></strong>. All Rights Reserved 2023</p>
+  </footer>
+
+    
+  <!-- Template Main JS File -->
+  <script src="javascript_js\scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
