@@ -1,21 +1,16 @@
-  // Smooth scrolling function
-  function smoothScroll(target) {
-    const element = document.querySelector(target);
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
-  }
-
-  // Listen for click events on anchor links
-  document.addEventListener('click', function(event) {
-    if (event.target.tagName === 'A' && event.target.getAttribute('href').startsWith('#')) {
-      event.preventDefault();
-      smoothScroll(event.target.getAttribute('href'));
-    }
-  });
-
+    document.addEventListener("DOMContentLoaded", function() {
+        const anchorLinks = document.querySelectorAll('a[href^="#"]');
+        anchorLinks.forEach(link => {
+            link.addEventListener("click", function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute("href");
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                }
+            });
+        });
+    });
   const slideshowContainers = document.querySelectorAll('.slideshow-container');
 
   slideshowContainers.forEach(container => {
