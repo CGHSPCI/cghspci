@@ -1,4 +1,13 @@
-    document.addEventListener("DOMContentLoaded", function() {
+  $(document).ready(function() {
+    $('a[href^="#"]').on('click', function(event) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 500);
+    });
+  });
+
+document.addEventListener("DOMContentLoaded", function() {
         const anchorLinks = document.querySelectorAll('a[href^="#"]');
         anchorLinks.forEach(link => {
             link.addEventListener("click", function(event) {
