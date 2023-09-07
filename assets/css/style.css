@@ -642,7 +642,7 @@ text-decoration: none;
 
 }
 
-.icon-services_one{
+.icon-services{
   color: #000000;
   width: 450px;
   height: auto;
@@ -651,24 +651,6 @@ text-decoration: none;
   padding: 20px;
   font-size: 25px;
   
-}
-.icon-services_two{
-  color: #000000;
-  width: 450px;
-  height: auto;
-  top: 30px;
-  top: 100px;
-  padding: 20px;
-  font-size: 25px;
-}
-.icon-services_three{
-  color: #000000;
-  width: 450px;
-  height: auto;
-  top: 30px;
-  top: 100px;
-  padding: 20px;
-  font-size: 25px;
 }
 /*-----news---*/
 .latest-news{
