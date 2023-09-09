@@ -204,26 +204,26 @@ document.addEventListener("DOMContentLoaded", function() {
       lastScroll = currentScroll;
   });
   
-  const images = [
-    '../CGHSPCI4/image/event1.jpg',
-    '../CGHSPCI4/image/event2.jpg',
-    '../CGHSPCI4/image/event3.jpg'
-  ];
-  const imageElement = document.getElementById('changing-image');
-  let currentImageIndex = 0;
+  // const images = [
+  //   '../CGHSPCI4/image/event1.jpg',
+  //   '../CGHSPCI4/image/event2.jpg',
+  //   '../CGHSPCI4/image/event3.jpg'
+  // ];
+  // const imageElement = document.getElementById('changing-image');
+  // let currentImageIndex = 0;
   
-  function changeImage() {
-    // Set the new image source
-    imageElement.src = images[currentImageIndex];
+  // function changeImage() {
+  //   // Set the new image source
+  //   imageElement.src = images[currentImageIndex];
     
-    // Set the desired width and height (e.g., 300px width and 200px height)
-    imageElement.style.width = '150%';
-    imageElement.style.height = '60vh';
+  //   // Set the desired width and height (e.g., 300px width and 200px height)
+  //   imageElement.style.width = '150%';
+  //   imageElement.style.height = '60vh';
     
-    currentImageIndex = (currentImageIndex + 1) % images.length;
-  }
+  //   currentImageIndex = (currentImageIndex + 1) % images.length;
+  // }
   
-  setInterval(changeImage, 3000); // Change image every 3 seconds
+  // setInterval(changeImage, 3000); // Change image every 3 seconds
   
 
   document.addEventListener("DOMContentLoaded", function () {
