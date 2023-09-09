@@ -1,16 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const anchorLinks = document.querySelectorAll('a[href^="#"]');
-  anchorLinks.forEach(link => {
-      link.addEventListener("click", function(event) {
-          event.preventDefault();
-          const targetId = this.getAttribute("href");
-          const targetElement = document.querySelector(targetId);
-          if (targetElement) {
-              targetElement.scrollIntoView({ behavior: "smooth" });
-          }
-      });
-  });
-});
 
   // Mobile Navigation
   if ($('.nav-menu').length) {
@@ -245,4 +232,11 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   });
+
+
+  function arielclick(){
+
+      console.log("pinindot ko to ");
+
+  }
   
