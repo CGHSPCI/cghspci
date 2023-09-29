@@ -1093,6 +1093,9 @@ table {
     .dialysis .card h3{
       font-size: 20px;
     }
+     .nccasutopbottomimg img{
+      width: 100%;
+    }
   }
 
   @media (min-width: 768px) and (max-width: 992px) {
