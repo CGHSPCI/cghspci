@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body{
+    font-size: 20px;
+    text-rendering: optimizingLegebility;
+    overflow-x: hidden;
+    color: #313131;
+}
+
+@media only screen and (max-width: 768px) {
+    html,body {
+    width: 100%;
+    height:  100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+   }
+  }
+
+  .table{
+    width: 50vh;
+  }
