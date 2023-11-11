@@ -1,5 +1,5 @@
 
-
+  
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 1,
   spaceBetween: 25,
@@ -38,6 +38,8 @@ var swiper = new Swiper(".slide-content", {
 });
 
 
+
+  
   // Mobile Navigation
   if ($('.nav-menu').length) {
     var $mobile_nav = $('.nav-menu').clone().prop({
