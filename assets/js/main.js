@@ -1,38 +1,4 @@
-var swiper = new Swiper(".slide-content", {
-  slidesPerView: 3,
-  spaceBetween: 5,
-  loop: true,
-  fade: true,
-  grabCursor: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    430: {
-      slidesPerView: 2,
-    },
-    860: {
-      slidesPerView: 3,
-    },
-    1290: {
-      slidesPerView: 4,
-    },
-  },
-  autoplay: {
-    delay: 2000,
-  },
-});
-  
-  
+
   // Mobile Navigation
   if ($('.nav-menu').length) {
     var $mobile_nav = $('.nav-menu').clone().prop({
