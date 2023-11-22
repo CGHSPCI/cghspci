@@ -1,8 +1,6 @@
-
-  
 var swiper = new Swiper(".slide-content", {
-  slidesPerView: 1,
-  spaceBetween: 25,
+  slidesPerView: 3,
+  spaceBetween: 5,
   loop: true,
   fade: true,
   grabCursor: true,
@@ -10,9 +8,6 @@ var swiper = new Swiper(".slide-content", {
     el: ".swiper-pagination",
     clickable: true,
     dynamicBullets: true,
-  },
-  scrollbar: {
-    el: '.swiper-scrollbar',
   },
   navigation: {
     nextEl: ".swiper-button-next",
@@ -25,7 +20,7 @@ var swiper = new Swiper(".slide-content", {
     430: {
       slidesPerView: 2,
     },
-   860: {
+    860: {
       slidesPerView: 3,
     },
     1290: {
@@ -36,9 +31,7 @@ var swiper = new Swiper(".slide-content", {
     delay: 2000,
   },
 });
-
-
-
+  
   
   // Mobile Navigation
   if ($('.nav-menu').length) {
@@ -253,20 +246,20 @@ var swiper = new Swiper(".slide-content", {
   });
   
 // main.js
-// function togglePasswordVisibility() {
-//   const passwordField = document.getElementById('passwordField');
-//   const toggleIcon = document.getElementById('toggleIcon');
+function togglePasswordVisibility() {
+  const passwordField = document.getElementById('passwordField');
+  const toggleIcon = document.getElementById('toggleIcon');
 
-//   if (passwordField.type === 'password') {
-//       passwordField.type = 'text';
-//       toggleIcon.classList.remove('fa-eye');
-//       toggleIcon.classList.add('fa-eye');
-//   } else {
-//       passwordField.type = 'password';
-//       toggleIcon.classList.remove('fa-eye');
-//       toggleIcon.classList.add('fa-eye');
-//   }
-// }
+  if (passwordField.type === 'password') {
+      passwordField.type = 'text';
+      toggleIcon.classList.remove('fa-eye');
+      toggleIcon.classList.add('fa-eye');
+  } else {
+      passwordField.type = 'password';
+      toggleIcon.classList.remove('fa-eye');
+      toggleIcon.classList.add('fa-eye');
+  }
+}
 
 document.addEventListener('DOMContentLoaded', function () {
   // Your code here, including the subTitles[0].click(); line if needed
@@ -295,5 +288,3 @@ function showOptions() {
 document.getElementById('tableSelector').addEventListener('change', function() {
   this.size = 1; // Reset size to 1 after an option is selected
 });
-
-
